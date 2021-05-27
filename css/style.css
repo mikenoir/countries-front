@@ -37,12 +37,4 @@ i {
     margin-bottom: 15px;
 }
 
-nav {
-    background-color: rgba(25, 135, 85, .8);
-}
-
-option {
-    width: 100%;
-    background-color: white;
-    color: black;
-}
+nav { background-color: rgba(25, 135, 85, .8); }
