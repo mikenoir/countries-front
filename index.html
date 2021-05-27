@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Countries by Mike Caballero</title>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-light pt-3 pb-3">
+        <div class="container-fluid">
+            <h1>Get countries information from <a href="https://restcountries.eu/" target="_blank">restcountries API</a> by Mike Caballero</h1>
+            <div class="d-flex">
+                <a href="https://www.linkedin.com/in/miguel-caballero34/" target="_blank"><i class="bi bi-linkedin"></i></a>   
+                <a class="ms-2" href="https://github.com/mikenoir" target="_blank"><i class="bi bi-github"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-3 mb-3 pt-4">  
+        <div class="accordion mt-3 mb-3" id="about">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        About this project
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#about">
+                    <div class="accordion-body">
+                        Hello, I'm Mike and the goal of this project is get information about countries via a RESTful API from <a href="https://restcountries.eu/" target="_blank">restcountries.eu/</a><br> 
+                        For this project I used HTML, CSS with bootstrap and Javascript with jQuery. <br>
+                        Search your country and enjoy using this website <br>
+                        <a href="https://github.com/mikenoir/countries-front" target="_blank">view source - GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-group mb-3">
+            <input list="countries-list" id="search-term" class="form-control" placeholder="Search">
+            <datalist id="countries-list"></datalist>
+            <div class="input-group-append">
+                <button class="btn btn-success search-button" type="submit">Search</button>
+            </div>
+        </div>
+        <div class="row m-0 countries" id="results"></div>
+    </div>
+    <script src="./js/jQuery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/Search.js"></script>
+</body>
+</html>
